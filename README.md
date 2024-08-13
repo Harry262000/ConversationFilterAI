@@ -1,61 +1,30 @@
-# ConversationFilterAi
+# Conversation Filter AI
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## Overview
 
-
+**Conversation Filter AI** is a machine learning-based project designed to monitor and filter conversations in real-time. This tool aims to ensure respectful and constructive interactions by detecting and handling abusive or inappropriate language in communications between customers and executives.
 
-## Project Organization
+## Features
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         ConversationFilterAi and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── ConversationFilterAi   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes ConversationFilterAi a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+- **Real-Time Monitoring**: Analyzes conversations as they happen.
+- **Abusive Language Detection**: Identifies and flags abusive or inappropriate language.
+- **Feedback Filtering**: Filters and categorizes feedback for companies.
+- **Customizable Rules**: Allows configuration of filtering rules and thresholds.
+- **Integration Ready**: Easily integrates with customer support platforms.
 
---------
+## Technologies Used
 
+- **Python**: Programming language used for development.
+- **Deep Learning**: For advanced text analysis and language processing.
+- **Natural Language Processing (NLP)**: For language understanding and filtering.
+- **Hugging Face Transformers**: For state-of-the-art language models.
+- **Flask**: For creating a web interface (if required) or Streamlit will be preferable.
+- **Conda**: For managing dependencies and virtual environments.
+
+## Installation
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/harry262000/ConversationFilterAI.git
+cd ConversationFilterAI
