@@ -1,0 +1,20 @@
+# Required packages
+black
+flake8
+isort
+ipython
+jupyterlab
+matplotlib
+notebook
+numpy
+pandas
+scikit-learn
+tensorflow
+tensorflow-addons
+transformers
+openai
+streamlit
+python-dotenv
+
+# Editable install
+-e .
