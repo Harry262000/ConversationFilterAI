@@ -21,13 +21,13 @@ def load_image(image_path):
         return None
 
 # Load the image for the circular display
-image_path = "assets/images/86480339.jpeg"  # Adjust this path as needed
+image_path = "app/assets/images/86480339.jpeg"  
 image = load_image(image_path)
 
 # Load the LinkedIn and GitHub icons
-linkedin_icon_path = "assets/icons/linkedin.png"  # Adjust this path as needed
-github_icon_path = "assets/icons/github.png"
-resume_icon_path = "assets/icons/approved.png"  # Adjust this path as needed
+linkedin_icon_path = "app/assets/icons/linkedin.png"  
+github_icon_path = "app/assets/icons/github.png"
+resume_icon_path = "app/assets/icons/approved.png"
 
 linkedin_icon = load_image(linkedin_icon_path)
 github_icon = load_image(github_icon_path)
@@ -96,9 +96,7 @@ if image:
         st.markdown(f'<div class="circle-image"><img src="data:image/jpeg;base64,{img_str}"></div>', unsafe_allow_html=True)
         st.markdown('<div class="sidebar-text">Harshal Honde</div>', unsafe_allow_html=True)
         st.markdown('<div class="sidebar-text">Data Science Intern @Nroad</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Pune, IN</div>', unsafe_allow_html=True)
         
-        st.markdown('<div class="sidebar-section-title">Contact Information: </div>', unsafe_allow_html=True)
         st.markdown('<div class="sidebar-text">HarshalHonde50@gmail.com</div>', unsafe_allow_html=True)
         if linkedin_icon_base64 and github_icon_base64:
             st.markdown(f"""
@@ -109,21 +107,20 @@ if image:
                     <a href="https://github.com/Harry262000">
                         <img src="data:image/png;base64,{github_icon_base64}" alt="GitHub">
                     </a>
-                    <a href="/assets/Resume/Harshal_Honde_Intern.pdf">
+                    <a href="app/assets/Resume/Harshal_Honde_DS (2).pdf">
                         <img src="data:image/png;base64,{resume_icon_base64}" alt="Resume">
                     </a>
                 </div>
             """, unsafe_allow_html=True)
         
         st.markdown('<div class="sidebar-section-title">Skills</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Python</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-text">Speech-to-Text</div>', unsafe_allow_html=True)
         st.markdown('<div class="sidebar-text">Machine Learning</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Data Analysis</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-text">Abusive Language Detection</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-text">Deep Learning</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-text">NLP</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-text">Transformers</div>', unsafe_allow_html=True)
         
-        st.markdown('<div class="sidebar-section-title">Hobbies and Interests</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Reading</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Traveling</div>', unsafe_allow_html=True)
-        st.markdown('<div class="sidebar-text">Gaming</div>', unsafe_allow_html=True)
 
 # Title 
 st.title("ConversationFilterAi")
