@@ -24,8 +24,25 @@
 
 ## Installation
 
-### Clone the Repository
+### 1. Clone the Repository
+     git clone https://github.com/harry262000/ConversationFilterAI.git
+     cd ConversationFilterAI
 
-```sh
-git clone https://github.com/harry262000/ConversationFilterAI.git
-cd ConversationFilterAI
+### 2. Set Up the Virtual Environment
+It's recommended to use Conda for managing the environment. Follow these steps:
+    
+    git clone https://github.com/harry262000/ConversationFilterAI.git
+    cd ConversationFilterAI
+
+### 3. Install Dependencies
+Install the required Python libraries using the provided requirements.txt file:
+    
+    pip install -r requirements.txt
+
+### 4. Run the Application
+You can choose to run the application using Streamlit (recommended) or Flask.
+    
+    streamlit run app.py
+
+### Contact
+For any inquiries or issues, please contact Harshal at [Email](Harshalhonde50@gmail.com).
